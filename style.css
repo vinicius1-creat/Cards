@@ -14,3 +14,23 @@ body {
     overflow: hidden;
 }
 
+.container {
+    display: flex;
+    gap: 30px;
+    perspective: 1000px;
+}
+
+.card {
+    width: 280px;
+    height: 360p;
+    padding: 25px;
+    border-radius: 20px;
+    background: rgba(255,255,255,0.15);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border: 1px solid rgba(255,255,255,0.2);
+    color: #fff;
+    transition: all 0.4s ease;
+    box-shadow: 0 25px 40px rgba(0,0,0,0.3);
+    transform-style: preserve-3d;
+}
