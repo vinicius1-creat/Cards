@@ -1,11 +1,11 @@
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
 
-body {
+body{
     min-height: 100vh;
     display: flex;
     justify-content: center;
@@ -14,13 +14,13 @@ body {
     overflow: hidden;
 }
 
-.container {
+.container{
     display: flex;
     gap: 30px;
     perspective: 1000px;
 }
 
-.card {
+.card{
     width: 280px;
     height: 360p;
     padding: 25px;
@@ -35,18 +35,18 @@ body {
     transform-style: preserve-3d;
 }
 
-.card h2 {
+.card h2{
     font-size: 24px;
     margin-bottom: 15px;
 }
 
-.card p {
+.card p{
     font-size: 14px;
     line-height: 1.6;
     opacity: 0.9;
 }
 
-.card button {
+.card button{
     margin-top: 25px;
     padding: 10px 22px;
     border-radius: 30px;
@@ -58,6 +58,11 @@ body {
     transition: 0.3s;
 }
 
-.card button:hover {
+.card button:hover{
+    background: white;
+    color: #000;
+}
+
+.card:hover{
     box-shadow: 0 30px 60px rgba(0,0,0,0.6);
 }

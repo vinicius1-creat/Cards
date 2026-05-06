@@ -1,12 +1,25 @@
-const cards = document.querySelectorAll(".card") cards.forEach(card => {
+const cards = document.querySelectorAll(".card") 
+cards.forEach(card => {
     card.addEventListener("mousemove" ,(e) => {
-        const rect = card.()
-        const x = e.clientx - rect.left;
-        const y = e.clienty - rect.top;
+        const rect = card.getBoundingClientRect();
+        const X = e.clientX - rect.left;
+        const Y = e.clientY -rect.top;
 
-        const rotatex = ((y/rect.height) -0.5) *15;
-        const rotatey = ((x/rect.height) -0.5) *-15;
+        const rotateX = ((Y/rect.height) - 0.5) *45;
+         const rotateY =  ((X/rect.width) - 0.5) *-45;
 
-        card.style.transform = 'rotatex($'{rotatex}de
+        card.style.transform = `rotateX(${rotateX}deg)
+        rotatY(${rotateY}deg)
+        scale(1.05)`;
+
     });
+
+    card.addEventListener("mouseleave" ,() => {
+        card.style.transform =
+        `
+        rotateX(0deg)
+        rotateY(0deg)
+        scale(1)
+        `
+    })
 })
