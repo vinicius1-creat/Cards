@@ -10,7 +10,7 @@ cards.forEach(card => {
 
         card.style.transform = `
         rotateX(${rotateX}deg)
-        rotatY(${rotateY}deg)
+        rotateY(${rotateY}deg)
         scale(1.05)
         `;
 
